@@ -6,6 +6,7 @@ import { absoluteUrl, cn } from "@/lib/utils"
 import TailwindIndicator from "@/components/tailwind-indicator"
 import ToastWrapper from "@/components/ui/toast-wrapper"
 import "@/styles/globals.css"
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -89,6 +90,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           {children}
           <ToastWrapper />
           <TailwindIndicator />
+          <ReactQueryDevtools initialIsOpen={true} position="bottom-right" />
         </body>
       </html>
     </TRPCProvider>

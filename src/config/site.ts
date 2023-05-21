@@ -40,6 +40,11 @@ export const siteConfig: SiteConfig = {
       icon: Icons.list,
     },
     {
+      title: "Hot",
+      href: "/hot-collection",
+      icon: Icons.thumbsUp,
+    },
+    {
       title: "Notifications",
       onClick: () => alert("🛹 Do a kickflip"),
       icon: Icons.bell,
